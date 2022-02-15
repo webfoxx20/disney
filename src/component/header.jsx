@@ -7,7 +7,7 @@ import { signInWithPopup } from "firebase/auth";
 import { UserLogin, UserSignOut } from "../features/UserSlice";
 import { useNavigate } from "react-router-dom";
 
-import Logo from "../assest/images/logo.svg";
+import Logo from "../assest/images/Disney+.svg";
 import HomeLogo from "../assest/images/home-icon.svg";
 import SearchLogo from "../assest/images/search-icon.svg";
 import WatchlistLogo from "../assest/images/watchlist-icon.svg";
@@ -74,7 +74,7 @@ const Header = (props) => {
           <Link to="#" className="px-8">
             <span
               onClick={signInWithGoogle}
-              className="border border-[#f9f9f9] bg-[#00000099] py-2 rounded transition hover:bg-white hover:text-black px-6 text-2xl tracking-wider"
+              className="border border-[#f9f9f9] bg-[#00000099] py-0.5 pb-1 md:py-2 md:pb-2 rounded transition hover:bg-white   hover:text-black px-3 md:px-6 text-xl md:text-2xl tracking-wider"
             >
               Login
             </span>
