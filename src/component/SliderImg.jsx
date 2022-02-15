@@ -26,7 +26,7 @@ const SliderImg = () => {
   });
 
   return (
-    <div className=" slide-container   mt-10 ">
+    <div className=" slide-container   mt-[70px] ">
       <Slider {...settings} className="shadow-xl  ">
         {slides}
       </Slider>
