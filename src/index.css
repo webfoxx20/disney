@@ -1,0 +1,104 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #040714;
+}
+
+.primary-nav::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  display: block;
+  border-right: 4px;
+  border-left: 4px;
+  background-color: #f9f9f9;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-top: 2px;
+}
+
+.primary-nav:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+.main-content {
+  min-height: calc(100vh - 250px);
+}
+
+.slick-dots button:before {
+  font-size: 10px !important;
+  color: rgb(150, 158, 171);
+}
+.slick-dots .slick-active button:before {
+  color: white !important;
+}
+.slick-arrow {
+  height: 100%;
+  width: 80px;
+  z-index: 1;
+}
+.slick-list {
+  overflow: initial !important;
+}
+.slide-container {
+  height: 100%;
+}
+.slide {
+  box-shadow: rgb(0 0 0 / 69%) 0px 25px 30px -10px,
+    rgb(0 0 0/73%) 0px 16px 10px -10px;
+}
+
+.movies {
+  box-shadow: rgb(0 0 0 / 69%) 0px 25px 30px -10px,
+    rgb(0 0 0/73%) 0px 16px 10px -10px;
+}
+
+.divv {
+  padding-top: 56.25%;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+}
+.movv {
+  inset: 0px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 500ms ease-in-out 0s;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+.clip-path {
+  clip-path: circle();
+}
+
+/* //shimmer */
+.animate-shimmer {
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-150%);
+  }
+  50% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
