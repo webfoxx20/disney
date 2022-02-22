@@ -39,7 +39,7 @@ const Details = () => {
           <img
             src={detailsData.titleImg}
             alt={detailsData.title}
-            className="w-96"
+            className="w-40 md:w-96"
           />
           <div className="flex  mt-20">
             <button className="bg-white  px-4 rounded md:py-1.5 hover:bg-white hover:bg-opacity-80 flex items-center">
